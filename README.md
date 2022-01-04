@@ -5,6 +5,9 @@
 npm install
 ```
 
+### Using fake-rest-api
+https://github.com/viniciosneves/fake-rest-api
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
