@@ -22,6 +22,7 @@
 <script>
 import BarraNavegacaoLogado from './BarraNavegacaoLogado'
 import BarraNavegacaoDeslogado from './BarraNavegacaoDeslogado'
+import { mapGetters } from 'vuex'
 
 export default {
   components: {
@@ -29,9 +30,7 @@ export default {
     BarraNavegacaoDeslogado
   },
   computed: {
-    usuarioLogado() {
-      return Boolean(this.$store.state.token);
-    },
+    ...mapGetters(['usuarioLogado'])
   },
 };
 </script>

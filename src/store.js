@@ -16,7 +16,7 @@ const mutations = {
   },
   DESLOGAR_USUARIO(state) {
     state.token = null,
-      state.usuario = {}
+    state.usuario = {}
   }
 }
 
@@ -39,8 +39,13 @@ const actions = {
   }
 }
 
+const getters = {
+  usuarioLogado: state => Boolean(state.token)
+}
+
 export default new Vuex.Store({
   state: estado,
   mutations,
-  actions
+  actions,
+  getters
 })
